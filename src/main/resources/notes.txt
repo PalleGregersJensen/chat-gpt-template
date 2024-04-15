@@ -1,0 +1,1 @@
+Vejr API: https://vejr.eu/api.php?location=Nairobi&degree=C
