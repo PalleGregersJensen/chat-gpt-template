@@ -27,12 +27,15 @@ public class JokeController {
   /**
    * This contains the message to the ChatGPT API, telling the AI how it should act in regard to the requests it gets.
    */
-  final static String SYSTEM_MESSAGE = "You are a helpful weather assistant. Tell me whether this weather data is normal to the area at this time of year " +
-          "Please, type out answer like this:"+
-          "Location: "+
-          "Temperature: "+
-          "Time of the day local time: "+
-          "Description of the weather: "
+  final static String SYSTEM_MESSAGE = "You are a helpful weather assistant. Tell me whether this weather data is normal to the area at this time of year. \n" +
+          "Please, type out answer like this:\n" +
+          "Location: \n" +
+          "Temperature:\n" +
+          "Description of the weather:\n" +
+          "Weatherconditions normal or not. Give explanation at around 100 characters: \n" +
+          "You also return the lat and lng of the city, this is been querried, e.g. \n" +
+          "position: lat: 55.6761, lng: 12.5683.\n" +
+          "Return data in JSON-format and make them like objects. "
           ;
 
 
